@@ -355,4 +355,45 @@ label{
   color:  black;
 
 }
+@media (max-width:768px){
+#loginForm{
+  margin-left: 76px;
+  margin-right: 100px;
+  margin-top: 20px;
+  max-width: 600px;
+  max-height: 300px;
+  /* padding-left: 20px; */
+  padding-top: 0;
+
+}
+#loginEmail{
+  height: 40px;
+  width: 200px;
+}
+#loginPassword{
+  height: 40px;
+  width: 200px;
+}
+.loginForm{
+  flex-direction: column;
+  margin: 0;
+  max-width: 600px;
+  height: 290px;
+}
+#submit_btn{
+  height: 25px;
+  width: 70px;
+  /* margin: 0; */
+  /* margin: 0; */
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+}
+/* .btttn{
+  margin-bottom: 20px;
+} */
+.logo{display: none;}
+
+}
 

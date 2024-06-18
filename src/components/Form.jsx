@@ -63,7 +63,7 @@ const Fom = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <div>
+      <div className="btttn">
         <button type="submit" id="submit_btn">
           Submit
         </button>
