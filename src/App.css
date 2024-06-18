@@ -355,7 +355,7 @@ label{
   color:  black;
 
 }
-@media (max-width:425px){
+@media (max-width:376px){
 #loginForm{
   margin-left: 76px;
   margin-right: 70px;
@@ -376,9 +376,7 @@ label{
 }
 .loginForm{
   flex-direction: column;
-  margin: 0;
-  max-width: 600px;
-  height: 290px;
+  
 }
 #submit_btn{
   height: 25px;
@@ -397,13 +395,40 @@ label{
   margin-left: 0;
   margin-top: -200px;
   padding-bottom: 200px;
+  flex-wrap: nowrap;
  }
-.logo img{
+/* .logo img{
   height: 200px;
   width: 200px;
   margin-top: 2px;
   margin-left: 80px;
   margin-bottom: 200px;
+} */
+.layout{
+ max-width: 375px;
+}
+.vicsoft{
+  height: 200px;
+  width: 200px;
+}
+.reg-container{
+  flex-direction: column;
+  width: 376px;
+}
+#studentDetailForm{
+  width: 300px;
+  height: 450px;
+}
+input{ 
+  height: 15px;
+  width: 90px;
+}
+select{
+  height: 15px;
+  width: 90px;
+}
+label{
+  font-size: 10px;
 }
 
 }

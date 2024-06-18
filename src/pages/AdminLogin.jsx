@@ -13,7 +13,7 @@ const AdminLogin = () => {
       }
     
   return (
-    <div style={style}>
+    <div style={style} className='adl'>
       <Login />
     </div>
   )
