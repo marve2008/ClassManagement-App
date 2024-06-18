@@ -28,9 +28,9 @@ const Main = () => {
     email: Yup.string().required("Email Required"),
     phoneNumber: Yup.number().required("Phonenumber Required"),
     state: Yup.string().required("State of Origin Required"),
-    // gender: '',
-    // program: Yup.string().required("program required"),
-    // price: Yup.string().required("price required"),
+    gender: Yup.string().required('gender required').oneOf(['male','female'], 'Invalid Gender'),
+   program: Yup.string().required("program required"),
+    price: Yup.string().required("price required"), 
     start_date: Yup.string().required("Start date reqired"),
     end_date: Yup.string().required("End date required"),
   });
@@ -107,20 +107,20 @@ const Main = () => {
                 <div>
                   <label htmlFor="">Gender</label>
                   <br />
-                  <input type="radio" name="gender" id="male" />
-                  Male
-                  <input type="radio" name="gender" id="female" />
-                  Female
-                  {/* {errors.gender && touched.gender ? (
+                  <Field as="select" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </Field>
+                  {errors.gender && touched.gender ? (
                     <div>{errors.gender}</div>
-                  ) : null} */}
+                  ) : null}
                 </div>
 
                 <div>
                   {/* <!-- <label for="">program</label> --> */}
                   <label>program</label>
                   <br />
-                  <select name="program" id="program">
+                  <Field as="select" name="program" id="program">
                     <option value="">select program</option>
                     <option value="ICT Fundamentals">ICT Fundamentals</option>
                     <option value="Web Design">Web Design</option>
@@ -137,13 +137,13 @@ const Main = () => {
                     <option value="Graphics Design">Graphics Design</option>
                     <option value="UI/UX Design">UI/UX Design</option>
                     <option value="Digital Marketing">Digital Marketing</option>
-                  </select>
-                  {/* {errors.program && touched.program ? (
+                  </Field>
+                  {errors.program && touched.program ? (
                     <div>{errors.program}</div>
-                  ) : null} */}
+                  ) : null}
                 </div>
                 <div>
-                  <select name="price" id="price">
+                  <Field as="select" name="price" id="price">
                     <option value="">Amount</option>
                     <option value="ICT Fundamentals(40,000)">
                       ICT Fundamentals(40,000)
@@ -172,10 +172,10 @@ const Main = () => {
                     <option value="Digital Marketing(50,000)">
                       Digital Marketing(50,000)
                     </option>
-                  </select>
-                  {/* {errors.price && touched.price ? (
+                  </Field>
+                  {errors.price && touched.price ? (
                     <div>{errors.price}</div>
-                  ) : null} */}
+                  ) : null}
                 </div>
                 <div>
                   {/* <!-- <label for="">start date</label> --> */}

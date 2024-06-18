@@ -1,28 +1,24 @@
-import React, { useState, useEffect, useContext } from "react";
-// import { Formik, Field, Form } from "formik";
-import { useNavigate } from "react-router";
-import { AuthContext } from "../helpers/AuthContext";
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../helpers/AuthContext"; 
 import { toast } from "react-toastify";
 
 const Fom = () => {
   const { handleLogin } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
-    const email = event.target.email.value;
-    const password = event.target.password.value;
+    
     if (email && password) {
       try {
         const { user, error } = await handleLogin(email, password);
         if (!user) {
           console.log("Something went wrong");
-          toast.error('An error occurred', {
-            position: 'top-left',
+          toast.error("An error occurred", {
+            position: "top-left",
           });
         } else {
           navigate("/data-table");
@@ -32,12 +28,15 @@ const Fom = () => {
         }
       } catch (error) {
         console.error("An error occurred:", error);
-        toast.error('An error occurred', {
-          position: 'top-left',
+        toast.error("An error occurred", {
+          position: "top-left",
         });
       }
     } else {
       console.log("Email and password are required");
+      toast.error("Email and password are required", {
+        position: "top-left",
+      });
     }
   };
 
@@ -66,7 +65,7 @@ const Fom = () => {
       </div>
       <div>
         <button type="submit" id="submit_btn">
-          submit
+          Submit
         </button>
       </div>
     </form>
