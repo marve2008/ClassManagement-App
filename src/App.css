@@ -355,10 +355,10 @@ label{
   color:  black;
 
 }
-@media (max-width:768px){
+@media (max-width:425px){
 #loginForm{
   margin-left: 76px;
-  margin-right: 100px;
+  margin-right: 70px;
   margin-top: 20px;
   max-width: 600px;
   max-height: 300px;
@@ -393,7 +393,18 @@ label{
 /* .btttn{
   margin-bottom: 20px;
 } */
-.logo{display: none;}
+ .logo{
+  margin-left: 0;
+  margin-top: -200px;
+  padding-bottom: 200px;
+ }
+.logo img{
+  height: 200px;
+  width: 200px;
+  margin-top: 2px;
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
 
 }
 
