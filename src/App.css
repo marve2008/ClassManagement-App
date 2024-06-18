@@ -1,0 +1,358 @@
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+/* .form-group{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 5px;
+  color: white;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .reg-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 200px;
+   width: 1000; 
+}
+
+.reg-container div img{
+  margin-top: 30vh;
+  height: 300px;
+  width: 400px;
+  opacity: 0.4;
+  border-radius: 25px;
+}
+.reg{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+form{
+  background: rgb(70, 70, 148);
+  border-radius: 8px;
+  opacity: 0.4; 
+  padding: 50px;
+ 
+  color: aliceblue;
+  font-family: cursive;
+}
+.contain{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+input::placeholder{
+  color: white
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea{
+  background-color: rgba(18, 36, 102, 0.99);
+  border: 2px solid rgb(171, 168, 168);
+  border-radius: 2px;
+  color: white;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+
+
+.reg-btn{
+  border-radius: 20px;
+  border: 3px solid white;
+  height: 40px;
+  width: 200px;
+  margin: 20px 150px ;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reg-btn:hover{
+  background: lightblue;
+}  */
+.container{
+  display: flex;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-color:rgb(59, 57, 57);
+}
+.logo{
+  margin: 180px -90px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.logo img{
+  height: 300px;
+  width: 400px;
+  opacity: 0.4;
+  border-radius: 25px;
+}
+
+#loginForm{
+  margin: 150px;
+  color: white;
+  opacity: 1;
+  background: rgb(59, 57, 57);
+  opacity: 0.5;
+  padding: 15px 15px;
+  border-radius: 10px;
+  
+  
+  
+}
+.loginForm{
+  display: flex;
+  margin-bottom: 20px;
+  gap: 200px;
+}
+#loginEmail{
+  border-radius: 20px;
+  border: 2px solid white;
+  background: none;
+  height: 40px;
+  width: 400px;
+  font-weight: bold;
+  padding-left: 15px;
+  color: white;
+  background: black;
+}
+#loginPassword{
+  border-radius: 20px;
+  border: 2px solid white;
+  background: none;
+  height: 40px;
+  width: 400px;
+  font-weight: bold;
+  padding-left: 15px;
+  color: white;
+  background: black;
+}
+#submit_btn{
+  border-radius: 20px;
+  border: 3px solid white;
+  height: 40px;
+  width: 200px;
+  margin: 20px 120px ;
+  font-weight: bold;
+  cursor: pointer;
+}
+#submit_btn:hover{
+  background-color: rgb(229, 216, 216);
+}
+.form-group{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 5px;
+  color: black;
+}
+.sidebar  {
+  height: 100vh;
+  width: 170px;
+  /* position: fixed; */
+
+  /* z-index: 1000; */
+  background-color:rgb(4, 4, 4);
+  transition: all 0.6s ease;
+  padding: 0 20px;
+}
+.reg{
+  position: fixed;
+
+}
+.sidebar nav .toggle-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: aliceblue;
+}
+
+.hidden {
+  transform: translateX(-190px);
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: monospace;
+  
+}
+nav ul li  {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  /* list-style-type: none; */
+  
+}
+nav ul li:hover{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+nav ul li i {
+  padding-right: 20px;
+}
+.toggle-btn {
+height: 25px;
+width: 25px;
+background: none; 
+border: none;
+}
+.layout{
+  display: flex;
+  width: 100%;
+}
+.bttn{
+  z-index:  2000;
+  height: 50px;
+  color: white;
+  background-color: rgb(59, 57, 57);
+  border: none;
+}
+.table {
+  width: 1200px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.btn{
+  border: none;
+  font-size: 25px;
+  color: black;
+  background-color: white;
+}
+.table  th,
+.table td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+ 
+}.head tr th {
+  background-color: blue;
+  color: white;
+}
+.reg-container{
+  display: flex;
+  height: 100vh;
+  width: 1516px;
+  justify-content: space-around;
+  align-items: center;
+}
+.vicsoft{
+  height: 350px;
+  width: 350px;
+  opacity: 0.5;
+}
+
+
+#studentDetailForm{
+  background-color:  whitesmoke;
+  color: black;
+  height: 520px;
+  width: 630px;
+  padding: 30px 30px 0 30px;
+  opacity: 0.5;
+  border-radius: 20px;
+  border: 2px solid white;
+  /* z-index:  1000; */
+}
+.contain{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 30px;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: black;
+  font-family: cursive;
+}
+input{
+  height: 30px;
+  width: 270px;
+  margin: 0 0 15px 0;
+  background-color: rgba(18, 36, 102, 0.3);
+  border: 2px solid rgb(171, 168, 168);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+select{
+  height: 35px;
+  width: 270px;
+  margin: 0 0 15px 0;
+  background-color: rgba(18, 36, 102, 0.3);
+  border: 2px solid rgb(171, 168, 168);
+  border-radius: 2px;
+  color: black
+}
+
+#male{
+  height: 20px;
+  width: 20px;
+}
+
+#female{
+  height: 20px;
+  width: 20px;
+  margin-left: 30px;
+}
+label{
+  font-size: bold;
+  text-transform: uppercase;
+  color:  black;
+
+}
+
