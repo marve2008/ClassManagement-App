@@ -410,24 +410,25 @@ label{
 .vicsoft{
   height: 200px;
   width: 200px;
+  margin-right: 20px;
 }
 .reg-container{
   flex-direction: column;
   width: 376px;
 }
 #studentDetailForm{
-  width: 270px;
+  width: 290px;
   height: 400px;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: 50px;
 }
 input{ 
-  height: 15px;
-  width: 90px;
+  height: 20px;
+  width: 100px;
 }
 select{
-  height: 15px;
-  width: 90px;
+  height: 20px;
+  width: 100px;
 }
 label{
   font-size: 10px;
