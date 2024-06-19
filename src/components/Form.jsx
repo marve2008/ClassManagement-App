@@ -42,7 +42,7 @@ const Fom = () => {
 
   return (
     <form method="post" id="loginForm" onSubmit={handleSubmit}>
-      <h1>Welcome!</h1>
+      <h1 className="writes">Welcome!</h1>
       <div className="form-group">
         <input
           type="text"

@@ -63,7 +63,7 @@ const Main = () => {
         >
           {({ errors, touched }) => (
             <Form method="post" id="studentDetailForm">
-              <h1>Create new student</h1>
+              <h1 className="write">Create new student</h1>
               <div className="contain">
                 <div>
                   <label htmlFor="firstName ">FirstName</label>

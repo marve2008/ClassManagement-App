@@ -416,8 +416,8 @@ label{
  max-width: 375px;
 }
 .vicsoft{
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   margin-right: 20px;
 }
 .reg-container{
@@ -445,9 +445,12 @@ select{
 label{
   font-size: 10px;
 }
-h1{
+.writes{
   font-size: 20px;
   margin-top: 10px;
+}
+.write{
+  font-size: 15px;
 }
 
 }
