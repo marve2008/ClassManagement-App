@@ -380,7 +380,7 @@ label{
 }
 .loginForm{
   flex-direction: column;
-  display: flex;
+
   
   
 }
@@ -403,7 +403,7 @@ label{
   margin: 0;
   left: 130px;
   position: absolute;
-  bottom: 450px;
+  top: 20px;
  }
 /* .logo img{
   height: 200px;
