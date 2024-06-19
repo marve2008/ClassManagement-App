@@ -363,7 +363,7 @@ label{
 #loginForm{
   margin-left: 56px;
   margin-right: 70px;
-  margin-top: 250px;
+  margin-top: 300px;
   max-width: 600px;
   max-height: 300px;
   /* padding-left: 20px; */
@@ -403,7 +403,7 @@ label{
   margin: 0;
   left: 130px;
   position: absolute;
-  bottom: 400px;
+  bottom: 450px;
  }
 /* .logo img{
   height: 200px;
