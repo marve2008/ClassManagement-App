@@ -415,6 +415,10 @@ label{
 .layout{
  max-width: 375px;
 }
+.contain{
+  grid-template-columns: repeat(2,110px);
+  
+}
 .vicsoft{
   height: 80px;
   width: 80px;
@@ -433,7 +437,7 @@ label{
 }
 input{ 
   height: 20px;
-  width: 120px;
+  width: 130px;
 }
 .error{
   font-size: 10px;
