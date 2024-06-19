@@ -70,7 +70,7 @@ const Main = () => {
                   <br />
                   <Field type="text" name="firstName" />
                   {errors.firstName && touched.firstName ? (
-                   <div>{errors.firstName}</div>
+                   <div className="error">{errors.firstName}</div>
                   ) : null}
                 </div>
                 <div>
@@ -78,7 +78,7 @@ const Main = () => {
                   <br />
                   <Field type="text" name="surName" />
                   {errors.surName && touched.surName ? (
-                    <div>{errors.surName}</div>
+                    <div className="error">{errors.surName}</div>
                   ) : null}
                 </div>
                 <div>
@@ -86,14 +86,14 @@ const Main = () => {
                   <br />
                   <Field type="email" name="email" />
                   {errors.email && touched.email ? (
-                    <div>{errors.email}</div>
+                    <div className="error">{errors.email}</div>
                   ) : null}
                 </div>
                 <div>
                   <label htmlFor="">Phonenumber</label> <br />
                   <Field type="number" name="phoneNumber" />
                   {errors.phoneNumber && touched.phoneNumber ? (
-                    <div>{errors.phoneNumber}</div>
+                    <div className="error">{errors.phoneNumber}</div>
                   ) : null}
                 </div>
                 <div>
@@ -101,7 +101,7 @@ const Main = () => {
                   <br />
                   <Field name="state" type="text" />
                   {errors.state && touched.state ? (
-                    <div>{errors.state}</div>
+                    <div className="error">{errors.state}</div>
                   ) : null}
                 </div>
                 <div>
@@ -112,7 +112,7 @@ const Main = () => {
                     <option value="female">Female</option>
                   </Field>
                   {errors.gender && touched.gender ? (
-                    <div>{errors.gender}</div>
+                    <div className="error">{errors.gender}</div>
                   ) : null}
                 </div>
 
@@ -139,7 +139,7 @@ const Main = () => {
                     <option value="Digital Marketing">Digital Marketing</option>
                   </Field>
                   {errors.program && touched.program ? (
-                    <div>{errors.program}</div>
+                    <div className="error">{errors.program}</div>
                   ) : null}
                 </div>
                 <div>
@@ -174,7 +174,7 @@ const Main = () => {
                     </option>
                   </Field>
                   {errors.price && touched.price ? (
-                    <div>{errors.price}</div>
+                    <div className="error">{errors.price}</div>
                   ) : null}
                 </div>
                 <div>
@@ -182,7 +182,7 @@ const Main = () => {
                   <p>Start Date</p>
                   <Field type="date" name="start_date" id="start_date" />
                   {errors.start_date && touched.start_date ? (
-                    <div>{errors.start_date}</div>
+                    <div className="error">{errors.start_date}</div>
                   ) : null}
                 </div>
                 <div>
@@ -190,7 +190,7 @@ const Main = () => {
                   <p>End Date</p>
                   <Field type="date" name="end_date" id="end_date" />
                   {errors.end_date && touched.end_date ? (
-                    <div>{errors.end_date}</div>
+                    <div className="error">{errors.end_date}</div>
                   ) : null}
                 </div>
                 <div>
