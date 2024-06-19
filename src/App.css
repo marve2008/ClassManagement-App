@@ -359,7 +359,7 @@ label{
   color:  black;
 
 }
-@media (max-width:376px){
+@media (min-width:300px){
 #loginForm{
   margin-left: 56px;
   margin-right: 70px;
