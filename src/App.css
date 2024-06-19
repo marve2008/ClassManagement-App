@@ -425,8 +425,8 @@ label{
   width: 376px;
 }
 #studentDetailForm{
-  min-width: 290px;
- min-height: 400px;
+  width: 290px;
+ height: 400px;
   margin-right: 30px;
   margin-bottom: 50px;
 }
