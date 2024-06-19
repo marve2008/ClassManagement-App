@@ -320,6 +320,9 @@ h1{
   color: black;
   font-family: cursive;
 }
+.adl{
+  position: fixed;
+}
 input{
   height: 30px;
   width: 270px;
@@ -359,7 +362,7 @@ label{
 #loginForm{
   margin-left: 76px;
   margin-right: 70px;
-  margin-top: 20px;
+  margin-top: 60px;
   max-width: 600px;
   max-height: 300px;
   /* padding-left: 20px; */
@@ -383,19 +386,16 @@ label{
   width: 70px;
   /* margin: 0; */
   /* margin: 0; */
-  margin-left: 50px;
+  margin-left: 70px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 
 }
 /* .btttn{
   margin-bottom: 20px;
 } */
  .logo{
-  margin-left: 0;
-  margin-top: -200px;
-  padding-bottom: 200px;
-  flex-wrap: nowrap;
+  display: none
  }
 /* .logo img{
   height: 200px;
