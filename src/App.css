@@ -360,9 +360,9 @@ label{
 }
 @media (max-width:376px){
 #loginForm{
-  margin-left: 76px;
-  margin-right: 50px;
-  margin-top: 60px;
+  margin-left: 56px;
+  margin-right: 70px;
+  margin-top: 120px;
   max-width: 600px;
   max-height: 300px;
   /* padding-left: 20px; */
